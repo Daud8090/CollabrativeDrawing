@@ -30,15 +30,17 @@ function Chat(props) {
     props.socket.emit('message', { message })
     setMessage('');
   }
+  // -------------------------
   return (
     <div className="App">
       <div className="msg" ref={messageEl}>
         <div><h1>ChatBox</h1><hr /></div>
         {chat.map((data, index) => {
           {/* console.log(data + "vvv") */}
-          return (
+          return (<>
+            <sup>superscript</sup>
             <h3 key={index}>{data.message}</h3>
-          )
+          </>)
         })
         }
       </div>

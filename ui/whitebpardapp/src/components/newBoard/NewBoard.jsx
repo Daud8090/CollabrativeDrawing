@@ -51,7 +51,7 @@ function NewBoard(props) {
         // console.log(props);  
         saveableCanvas = canvasDraw;
       }}
-      brushColor={props.color}
+      // brushColor={props.color}
       brushRadius={3}
     />
   </>

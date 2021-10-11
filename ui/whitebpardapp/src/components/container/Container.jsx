@@ -33,18 +33,19 @@ function Container() {
     setcol(e.target.value)
     clearInterval(timer)
   }
+  // -----------------------------
   return (
     <>
       <div className="container">
-        <div className="colorpicker">
+        {/* <div className="colorpicker">
           Select Color :
           <input type="color" id="color" onChange={onChange1}></input>
-        </div>
+        </div> */}
         <Chat socket={socket} /> 
         {/* // Name={Name} Room={Room}/> */}
         <div className="board-container">
           {/* <Board color={col} /> */}
-          <NewBoard color={col} socket={socket}/>
+          <NewBoard  socket={socket}/>
         </div>
       </div>
     </>
