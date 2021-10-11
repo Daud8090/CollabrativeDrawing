@@ -19,7 +19,7 @@ function Container() {
 
   useEffect(() => {
     const { name, room } = queryString.parse(location.search);
-    console.log(name,room) 
+    // console.log(name,room) 
     setName(name)
     setRoom(room)
 

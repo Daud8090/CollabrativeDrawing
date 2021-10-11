@@ -15,10 +15,10 @@ function NewBoard(props) {
     func();
     //recceinving msg from the server
     props.socket.on('canvas-data', data => {
-      console.log(data.abc,"jljlkjlk");
+      // console.log(data.abc,"jljlkjlk");
       // debugger
      let actualData=JSON.parse(data.abc)
-      console.log(actualData.lines.length,"jljlkjlk");
+      // console.log(actualData.lines.length,"jljlkjlk");
 
       if (saveableCanvas!=null&&data.abc!=null&&actualData.lines.length!=0 &&samedata !== data.abc ) {
         saveableCanvas.loadSaveData(data.abc, true)
